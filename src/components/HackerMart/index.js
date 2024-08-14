@@ -13,8 +13,8 @@ function HackerMart() {
 			<div className="layout-column align-items-center justify-content-start">
 				<Navbar data-testid="header" />
 				<Routes>
-					<Route element={<Home/>} />
-					<Route element={<Cart/>} />
+					<Route path="/" element={<Home/>} />
+					<Route path="/cart" element={<Cart/>} />
 				</Routes>
 			</div>
 		</div>
