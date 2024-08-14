@@ -15,7 +15,7 @@ const App = () => {
 
     return (
         <div className="App">
-            <CartContext.Provider value={{productsList, cartList, setCartList}}>
+            <CartContext.Provider value={{productsList}}>
                 <h8k-navbar header={title}></h8k-navbar>
                 <Router>
                     <HackerMart />
