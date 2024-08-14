@@ -6,10 +6,10 @@ import { CartContext } from "../../provider/app";
 
 function addToCart(product) {
 
-    const { cartList, setCartList } = useContext(CartContext)
+    // const { cartList, setCartList } = useContext(CartContext)
 
 
-    setCartList()
+    // setCartList()
 
 }
 
