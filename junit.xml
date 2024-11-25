@@ -1,135 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="16" failures="9" errors="0" time="1.466">
-  <testsuite name="Navbar Component" errors="0" failures="9" skipped="0" timestamp="2024-08-14T19:15:09" time="1.1" tests="16">
-    <testcase classname="Navbar Component renders text &quot;Home&quot; in Home link" name="Navbar Component renders text &quot;Home&quot; in Home link" time="0.03">
+<testsuites name="jest tests" tests="16" failures="10" errors="0" time="1.947">
+  <testsuite name="Navbar Component" errors="0" failures="10" skipped="0" timestamp="2024-08-14T19:32:15" time="1.452" tests="16">
+    <testcase classname="Navbar Component renders text &quot;Home&quot; in Home link" name="Navbar Component renders text &quot;Home&quot; in Home link" time="0.028">
     </testcase>
-    <testcase classname="Navbar Component renders text &quot;Cart&quot; in Cart link" name="Navbar Component renders text &quot;Cart&quot; in Cart link" time="0.005">
+    <testcase classname="Navbar Component renders text &quot;Cart&quot; in Cart link" name="Navbar Component renders text &quot;Cart&quot; in Cart link" time="0.009">
     </testcase>
     <testcase classname="Navbar Component Home link redirects to Home page" name="Navbar Component Home link redirects to Home page" time="0.005">
     </testcase>
-    <testcase classname="Navbar Component Cart link redirects to Cart page" name="Navbar Component Cart link redirects to Cart page" time="0.009">
+    <testcase classname="Navbar Component Cart link redirects to Cart page" name="Navbar Component Cart link redirects to Cart page" time="0.004">
     </testcase>
     <testcase classname="Home Component displays the correct product details on rendering home page" name="Home Component displays the correct product details on rendering home page" time="0.099">
-      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;product-name-1&quot;]
-
-Here are the matching elements:
-
-Ignored nodes: comments, script, style
-&lt;td
-  data-testid=&quot;product-name-1&quot;
-&gt;
-  Product 1
-&lt;/td&gt;
-
-Ignored nodes: comments, script, style
-&lt;td
-  data-testid=&quot;product-name-1&quot;
-&gt;
-  Product 3
-&lt;/td&gt;
-
-(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-Ignored nodes: comments, script, style
-&lt;body&gt;
-  &lt;div&gt;
-    &lt;div
-      class=&quot;layout-column align-items-center justify-content-start&quot;
-      data-testid=&quot;home&quot;
-    &gt;
-      &lt;h3
-        data-testid=&quot;home-heading&quot;
-      &gt;
-        Home
-      &lt;/h3&gt;
-      &lt;div
-        class=&quot;products&quot;
-        data-testid=&quot;featured-products&quot;
-      &gt;
-        &lt;div
-          class=&quot;card w-200 pt-30 pb-8 mt-10&quot;
-        &gt;
-          &lt;table&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;
-                  Product Name
-                &lt;/th&gt;
-                &lt;th&gt;
-                  Description
-                &lt;/th&gt;
-                &lt;th&gt;
-                  Cost
-                &lt;/th&gt;
-                &lt;th&gt;
-                  Action
-                &lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody
-              data-testid=&quot;products&quot;
-            &gt;
-              &lt;tr&gt;
-                &lt;td
-                  data-testid=&quot;product-name-1&quot;
-                &gt;
-                  Product 1
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-description-1&quot;
-                &gt;
-                  This is the first product
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-cost-1&quot;
-                &gt;
-                  $9.99
-                &lt;/td&gt;
-                &lt;td&gt;
-                  &lt;button
-                    data-testid=&quot;add-to-cart-button-1&quot;
-                  &gt;
-                    Add to cart
-                  &lt;/button&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td
-                  data-testid=&quot;product-name-1&quot;
-                &gt;
-                  Product 3
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-description-1&quot;
-                &gt;
-                  This is the third product
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-cost-1&quot;
-                &gt;
-                  $29.99
-                &lt;/td&gt;
-                &lt;td&gt;
-                  &lt;button
-                    data-testid=&quot;add-to-cart-button-1&quot;
-                  &gt;
-                    Add to cart
-                  &lt;/button&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-    at Object.getElementError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/config.js:37:19)
-    at getElementError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
-    at getMultipleElementsFoundError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
-    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
-    at getByTestId (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:49:36)
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:48:15)
     at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
@@ -150,12 +47,24 @@ Ignored nodes: comments, script, style
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Home Component displays &quot;Add to cart&quot; button for each product" name="Home Component displays &quot;Add to cart&quot; button for each product" time="0.008">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 3
-Received: 2
-    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:60:41)
+    <testcase classname="Home Component displays &quot;Add to cart&quot; button for each product" name="Home Component displays &quot;Add to cart&quot; button for each product" time="0.052">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:58:15)
     at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
@@ -176,127 +85,24 @@ Received: 2
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Home Component calls &quot;addToCart&quot; function when &quot;Add to cart&quot; button is clicked" name="Home Component calls &quot;addToCart&quot; function when &quot;Add to cart&quot; button is clicked" time="0.008">
-      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;add-to-cart-button-1&quot;]
-
-Here are the matching elements:
-
-Ignored nodes: comments, script, style
-&lt;button
-  data-testid=&quot;add-to-cart-button-1&quot;
-&gt;
-  Add to cart
-&lt;/button&gt;
-
-Ignored nodes: comments, script, style
-&lt;button
-  data-testid=&quot;add-to-cart-button-1&quot;
-&gt;
-  Add to cart
-&lt;/button&gt;
-
-(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-Ignored nodes: comments, script, style
-&lt;body&gt;
-  &lt;div&gt;
-    &lt;div
-      class=&quot;layout-column align-items-center justify-content-start&quot;
-      data-testid=&quot;home&quot;
-    &gt;
-      &lt;h3
-        data-testid=&quot;home-heading&quot;
-      &gt;
-        Home
-      &lt;/h3&gt;
-      &lt;div
-        class=&quot;products&quot;
-        data-testid=&quot;featured-products&quot;
-      &gt;
-        &lt;div
-          class=&quot;card w-200 pt-30 pb-8 mt-10&quot;
-        &gt;
-          &lt;table&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;
-                  Product Name
-                &lt;/th&gt;
-                &lt;th&gt;
-                  Description
-                &lt;/th&gt;
-                &lt;th&gt;
-                  Cost
-                &lt;/th&gt;
-                &lt;th&gt;
-                  Action
-                &lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody
-              data-testid=&quot;products&quot;
-            &gt;
-              &lt;tr&gt;
-                &lt;td
-                  data-testid=&quot;product-name-1&quot;
-                &gt;
-                  Product 1
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-description-1&quot;
-                &gt;
-                  This is the first product
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-cost-1&quot;
-                &gt;
-                  $9.99
-                &lt;/td&gt;
-                &lt;td&gt;
-                  &lt;button
-                    data-testid=&quot;add-to-cart-button-1&quot;
-                  &gt;
-                    Add to cart
-                  &lt;/button&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td
-                  data-testid=&quot;product-name-1&quot;
-                &gt;
-                  Product 3
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-description-1&quot;
-                &gt;
-                  This is the third product
-                &lt;/td&gt;
-                &lt;td
-                  data-testid=&quot;product-cost-1&quot;
-                &gt;
-                  $29.99
-                &lt;/td&gt;
-                &lt;td&gt;
-                  &lt;button
-                    data-testid=&quot;add-to-cart-button-1&quot;
-                  &gt;
-                    Add to cart
-                  &lt;/button&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-    at Object.getElementError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/config.js:37:19)
-    at getElementError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
-    at getMultipleElementsFoundError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
-    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
-    at getByTestId (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:68:40)
+    <testcase classname="Home Component calls &quot;addToCart&quot; function when &quot;Add to cart&quot; button is clicked" name="Home Component calls &quot;addToCart&quot; function when &quot;Add to cart&quot; button is clicked" time="0.038">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:67:15)
     at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
@@ -317,7 +123,7 @@ Ignored nodes: comments, script, style
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Cart Component displays the cart details correctly" name="Cart Component displays the cart details correctly" time="0.015">
+    <testcase classname="Cart Component displays the cart details correctly" name="Cart Component displays the cart details correctly" time="0.023">
       <failure>Error: expect(element).toHaveTextContent()
 
 Expected element to have text content:
@@ -345,7 +151,7 @@ Received:
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Cart Component displays the total cost correctly" name="Cart Component displays the total cost correctly" time="0.007">
+    <testcase classname="Cart Component displays the total cost correctly" name="Cart Component displays the total cost correctly" time="0.019">
       <failure>Error: expect(element).toHaveTextContent()
 
 Expected element to have text content:
@@ -373,7 +179,7 @@ Received:
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Cart Component removes an item from the cart" name="Cart Component removes an item from the cart" time="0.008">
+    <testcase classname="Cart Component removes an item from the cart" name="Cart Component removes an item from the cart" time="0.015">
       <failure>Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
 
 Expected: 1
@@ -400,160 +206,24 @@ Number of calls: 0
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="Cart Component Check for duplicates when same product is added to cart multiple times" name="Cart Component Check for duplicates when same product is added to cart multiple times" time="0.012">
-      <failure>TestingLibraryElementError: Found multiple elements by: [data-testid=&quot;add-to-cart-button-1&quot;]
-
-Here are the matching elements:
-
-Ignored nodes: comments, script, style
-&lt;button
-  data-testid=&quot;add-to-cart-button-1&quot;
-&gt;
-  Add to cart
-&lt;/button&gt;
-
-Ignored nodes: comments, script, style
-&lt;button
-  data-testid=&quot;add-to-cart-button-1&quot;
-&gt;
-  Add to cart
-&lt;/button&gt;
-
-(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-Ignored nodes: comments, script, style
-&lt;body&gt;
-  &lt;div&gt;
-    &lt;div
-      class=&quot;hacker-mart&quot;
-    &gt;
-      &lt;div
-        class=&quot;layout-column align-items-center justify-content-start&quot;
-      &gt;
-        &lt;div
-          class=&quot;layout-column justify-content-center align-items-center navbar&quot;
-        &gt;
-          &lt;div
-            class=&quot;layout-row justify-content-around align-items-center mt-20 links&quot;
-            data-testid=&quot;navigation-tabs&quot;
-          &gt;
-            &lt;a
-              class=&quot;nav-link&quot;
-              data-testid=&quot;home-link&quot;
-              href=&quot;/&quot;
-              id=&quot;home-link&quot;
-            &gt;
-              Home
-            &lt;/a&gt;
-            &lt;a
-              class=&quot;nav-link&quot;
-              data-testid=&quot;cart-link&quot;
-              href=&quot;/cart&quot;
-              id=&quot;cart-link&quot;
-            &gt;
-              Cart
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div
-          class=&quot;layout-column align-items-center justify-content-start&quot;
-          data-testid=&quot;home&quot;
-        &gt;
-          &lt;h3
-            data-testid=&quot;home-heading&quot;
-          &gt;
-            Home
-          &lt;/h3&gt;
-          &lt;div
-            class=&quot;products&quot;
-            data-testid=&quot;featured-products&quot;
-          &gt;
-            &lt;div
-              class=&quot;card w-200 pt-30 pb-8 mt-10&quot;
-            &gt;
-              &lt;table&gt;
-                &lt;thead&gt;
-                  &lt;tr&gt;
-                    &lt;th&gt;
-                      Product Name
-                    &lt;/th&gt;
-                    &lt;th&gt;
-                      Description
-                    &lt;/th&gt;
-                    &lt;th&gt;
-                      Cost
-                    &lt;/th&gt;
-                    &lt;th&gt;
-                      Action
-                    &lt;/th&gt;
-                  &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody
-                  data-testid=&quot;products&quot;
-                &gt;
-                  &lt;tr&gt;
-                    &lt;td
-                      data-testid=&quot;product-name-1&quot;
-                    &gt;
-                      Product 1
-                    &lt;/td&gt;
-                    &lt;td
-                      data-testid=&quot;product-description-1&quot;
-                    &gt;
-                      This is the first product
-                    &lt;/td&gt;
-                    &lt;td
-                      data-testid=&quot;product-cost-1&quot;
-                    &gt;
-                      $9.99
-                    &lt;/td&gt;
-                    &lt;td&gt;
-                      &lt;button
-                        data-testid=&quot;add-to-cart-button-1&quot;
-                      &gt;
-                        Add to cart
-                      &lt;/button&gt;
-                    &lt;/td&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                    &lt;td
-                      data-testid=&quot;product-name-1&quot;
-                    &gt;
-                      Product 3
-                    &lt;/td&gt;
-                    &lt;td
-                      data-testid=&quot;product-description-1&quot;
-                    &gt;
-                      This is the third product
-                    &lt;/td&gt;
-                    &lt;td
-                      data-testid=&quot;product-cost-1&quot;
-                    &gt;
-                      $29.99
-                    &lt;/td&gt;
-                    &lt;td&gt;
-                      &lt;button
-                        data-testid=&quot;add-to-cart-button-1&quot;
-                      &gt;
-                        Add to cart
-                      &lt;/button&gt;
-                    &lt;/td&gt;
-                  &lt;/tr&gt;
-                &lt;/tbody&gt;
-              &lt;/table&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/body&gt;
-    at Object.getElementError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/config.js:37:19)
-    at getElementError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:20:35)
-    at getMultipleElementsFoundError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:23:10)
-    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
-    at getByTestId (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:114:40)
+    <testcase classname="Cart Component Check for duplicates when same product is added to cart multiple times" name="Cart Component Check for duplicates when same product is added to cart multiple times" time="0.05">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:108:15)
     at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
@@ -574,14 +244,24 @@ Ignored nodes: comments, script, style
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="HackerMart Component renders Navbar" name="HackerMart Component renders Navbar" time="0.02">
-    </testcase>
-    <testcase classname="HackerMart Component renders Home page when &apos;/&apos; route is clicked" name="HackerMart Component renders Home page when &apos;/&apos; route is clicked" time="0.018">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 3
-Received: 2
-    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:157:37)
+    <testcase classname="HackerMart Component renders Navbar" name="HackerMart Component renders Navbar" time="0.052">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:129:15)
     at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
@@ -602,14 +282,24 @@ Received: 2
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="HackerMart Component renders Cart page when &apos;/cart&apos; route is clicked" name="HackerMart Component renders Cart page when &apos;/cart&apos; route is clicked" time="0.011">
-    </testcase>
-    <testcase classname="HackerMart Component adds a product to the cart when the add to cart button is clicked on the Home page" name="HackerMart Component adds a product to the cart when the add to cart button is clicked on the Home page" time="0.007">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 3
-Received: 2
-    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:184:37)
+    <testcase classname="HackerMart Component renders Home page when &apos;/&apos; route is clicked" name="HackerMart Component renders Home page when &apos;/&apos; route is clicked" time="0.172">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:144:15)
     at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
@@ -630,7 +320,47 @@ Received: 2
     at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
     at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname="HackerMart Component removes a product from the cart when the remove from cart button is clicked on the Cart page" name="HackerMart Component removes a product from the cart when the remove from cart button is clicked on the Cart page" time="0.012">
+    <testcase classname="HackerMart Component renders Cart page when &apos;/cart&apos; route is clicked" name="HackerMart Component renders Cart page when &apos;/cart&apos; route is clicked" time="0.022">
+    </testcase>
+    <testcase classname="HackerMart Component adds a product to the cart when the add to cart button is clicked on the Home page" name="HackerMart Component adds a product to the cart when the add to cart button is clicked on the Home page" time="0.038">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at Home (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/components/Home/index.js:39:43)
+    at renderWithHooks (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/src/App.test.js:175:15)
+    at Promise.then.completed (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/home/gabrielbraz/hackerrank/f34274df-52bb-497e-a9f5-c4efc4649024/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="HackerMart Component removes a product from the cart when the remove from cart button is clicked on the Cart page" name="HackerMart Component removes a product from the cart when the remove from cart button is clicked on the Cart page" time="0.028">
     </testcase>
   </testsuite>
 </testsuites>

@@ -10,7 +10,7 @@ const title = "Market";
 
 const App = () => {
     const [productsList, setProductsList] = useState(products);
-    const [cartList, setCartList] = useState(products);
+    // const [cartList, setCartList] = useState(products);
 
 
     return (
